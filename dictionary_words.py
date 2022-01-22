@@ -1,5 +1,4 @@
 import random, sys
-from unittest import result
 
 def sentence_from_file():
   myfile = open('/usr/share/dict/words')
@@ -13,8 +12,8 @@ def sentence_from_file():
     rand_num = random.randint(0, len(content_of_file))
     words_list.append(content_of_file[rand_num].strip('\n'))
     
-  result = ' '
-  print(result.join(words_list))
+  sentence = ' '
+  print(sentence.join(words_list))
   myfile.close()
 
 if __name__ == '__main__':
